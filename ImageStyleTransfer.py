@@ -3,10 +3,10 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 
 # Cargamos la imagen que queremos aplicar el transfer de estilo
-imagen = tf.keras.preprocessing.image.load_img("ruta/de/la/imagen.jpg")
+imagen = tf.keras.preprocessing.image.load_img("rute.jpg")
 
 # Definimos el estilo que queremos aplicar a la imagen
-estilo = tf.keras.preprocessing.image.load_img("ruta/del/estilo.jpg")
+estilo = tf.keras.preprocessing.image.load_img("rute.jpg")
 
 # Creamos un modelo de transfer de estilo usando el estilo definido
 modelo = tf.keras.applications.vgg19.VGG19(include_top=False, weights="imagenet", input_shape=imagen.size)
@@ -38,7 +38,7 @@ import cv2
 captura = cv2.VideoCapture(0)
 
 # Definimos el estilo que queremos aplicar a la imagen
-estilo = tf.keras.preprocessing.image.load_img("ruta/del/estilo.jpg")
+estilo = tf.keras.preprocessing.image.load_img("rute.jpg")
 
 # Creamos un modelo de transfer de estilo usando el estilo definido
 modelo = tf.keras.applications.vgg19.VGG19(include_top=False, weights="imagenet", input_shape=captura.size)
