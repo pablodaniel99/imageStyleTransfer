@@ -8,4 +8,4 @@
 </p>
 
 
-### I have made other styleTransfer script but only for video. This one is only for image.
+### I have made other styleTransfer script but only for video. This one is only for image
